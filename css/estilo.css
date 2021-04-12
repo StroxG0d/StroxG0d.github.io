@@ -50,10 +50,3 @@ header .menu .ativo, header .menu a:hover{
   transition: 200ms;
 
 }
-
-.avatar {
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
