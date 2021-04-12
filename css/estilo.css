@@ -2,8 +2,8 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  color:white;
+  font-family: Helvetica
+
 }
 header {
 width: 100%;
@@ -52,7 +52,4 @@ header .menu .ativo, header .menu a:hover{
   transition: 200ms;
 
 }
- .fontes{
-color:white;9
-background-color:white
- }
+ 
