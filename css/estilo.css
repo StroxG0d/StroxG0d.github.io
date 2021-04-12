@@ -52,4 +52,6 @@ header .menu .ativo, header .menu a:hover{
   transition: 200ms;
 
 }
- 
+.fontes `{
+  font-family: Helvetica
+}
