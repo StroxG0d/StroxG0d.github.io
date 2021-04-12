@@ -3,6 +3,7 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  color:white;
 }
 header {
 width: 100%;
@@ -52,6 +53,6 @@ header .menu .ativo, header .menu a:hover{
 
 }
  .fontes{
-color:white;
+color:white;9
 background-color:white
  }
