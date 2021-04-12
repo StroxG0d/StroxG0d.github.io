@@ -43,4 +43,11 @@ header .menu .ativo, header .menu a:hover{
   justify-content: center;
   flex-direction: column;
 }
+.links {
+  color:white;
+  padding: 8px 12px;
+  border-radius: 3px;
+  transition: 200ms;
+
+}
 
