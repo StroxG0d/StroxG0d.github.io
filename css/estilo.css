@@ -1,10 +1,8 @@
-]body{
-    background-color: #082767;
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b72d7;
   }
-  #teste{
-    width: 400px;
-    height: 100px;
-    background-image: url(logolc.png);
-    background-repeat: repeat;
-  }
-  
