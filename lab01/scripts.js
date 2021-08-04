@@ -1,1 +1,1 @@
-console.log("Bem vindos ao starter!!!")
+console.log("Bem vindo Ao starter!!")
