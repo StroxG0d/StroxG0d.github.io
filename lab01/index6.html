@@ -1,5 +1,8 @@
 <script>
-    const sum = [1, 2, 3];
-    const total = sum.reduce((total, currentElement) => total + currentElement)
-    console.log(sum)
+    var arr = [1, 2, 3];
+    var sum = arr.reduce(function(soma, i) {
+        return soma + i;
+    });
+    
+    console.log(sum);
 </script>
