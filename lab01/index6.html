@@ -13,10 +13,12 @@ for(var i = 0; i < arr.length; i++ ){
 }
 console.log(sumOdds);
 
-var product = 1;
-for(var i = 0; i < arr.length; i++) {
-    product = product * arr[i];
 
-}
- console.log(product);
+let product = arr.reduce(function(total, num){
+total = total * num;
+return total;
+});
+
+console.log(product);
+ 
 </script>
