@@ -1,32 +1,29 @@
 <script> 
-function ATM(money){
-    for(aHundred=0;money - 100 >= 0; aHundred++){
-        money -= 100;
-        
-    }console.log('100 notas: ',aHundred);
-    for(aFifty=0;money - 50 >= 0; aFifty++){
-        money -= 50;
-        
-    }console.log('50 notas: ',aFifty);
-    for(aTwenty=0;money - 20 >= 0; aTwenty++){
-        money -= 20;
-        
-    }console.log('20 notas: ',aTwenty);
-    for(aTen=0;money - 10 >= 0; aTen++){
-        money -= 10;
+let cash = 15512
 
-    }console.log('10 notas: ',aTen);
-    for(aFive=0;money - 5 >= 0; aFive++){
-        money -= 5;
-        
-    }console.log('5 notas: ',aFive);
-    for(aTwo=0;money - 2 >= 0; aTwo++){
-        money -= 2;
-        
-    }console.log('2 notas: ',aTwo);
-    if(money == 0) return 'ok'
-    else return 'There is '+money+' Dolar left';
-
-}
-console.log(ATM(287));
+while( cash > 0){
+    while(cash>=100){
+        console.log(100)
+        cash = cash -100
+    }
+    while(cash>=50 && cash < 100){
+        console.log(50)
+        cash = cash-50
+    }
+    while(cash>=20 && cash < 50){
+        console.log(20)
+        cash = cash -20
+    }
+    while(cash>=10 && cash < 20){
+        console.log(10)
+        cash = cash -10
+    }
+    while(cash>=5 && cash < 10){
+        console.log(5)
+        cash = cash -5
+    }
+    while(cash>=2 && cash < 5){
+        console.log(2)
+        cash = cash -2
+}}
 </script>
