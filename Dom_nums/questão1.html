@@ -17,13 +17,14 @@
 
     <script>
         function sum() {
-            var num1 = window.document.getElementById('nun1');
-            var num2 = window.document.getElementById('nun2');
-            var result = window.document.getElementById('result');
-            var nu1 = Number(num1.value);
-            var nu2 = Number(num2.value);
-            var som = nu1 + nu2;
-        }   result.innerHTML = "A soma é igual a ${s}";
+            var nu1 = window.document.getElementById('num1');
+            var nu2 = window.document.getElementById('num2');
+            var res = window.document.getElementById('res');
+            var n1 = Number(nu1.value);
+            var n2 = Number(nu2.value);
+            var s = n1 + n2;
+            res.innerHTML = `A soma é igual a ${s}`;
+        }
     </script>
 </body>
 </html>  
