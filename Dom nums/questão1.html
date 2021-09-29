@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de dois números</title>
+</head>
+<body>
+    <h1>Laboratório de JS - DOM</h1>
+    <h4>Soma de dois números </h4>
+
+    <input type="number" name="num1" id="num1" placeholder="Insira um número">
+    <input type="number" name="num2" id="num2" placeholder="Insira um número">
+    <input type="button" value="Somar" onclick="sum()">
+    <div id="res"></div>
+
+    <script>
+        function sum() {
+            var num1 = window.document.getElementById('nun1');
+            var num2 = window.document.getElementById('nun2');
+            var result = window.document.getElementById('result');
+            var nu1 = Number(num1.value);
+            var nu2 = Number(num2.value);
+            var som = nu1 + nu2;
+        }   result.innerHTML = "A soma é igual a ${s}";
+    </script>
+</body>
+</html>  
