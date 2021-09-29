@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+    <h1>Exercícios NUM-DOM</h1>
+    <h4>Cálculo de hipotenusa:</h4>
+
+    <input type="number" name="num1" id="num1" placeholder="Insira um cateto">
+    <input type="number" name="num2" id="num2" placeholder="Insira um cateto">
+    <input type="button" value="Calcular" onclick="hipot()">
+    <div id="res"></div>
+
+    <script>
+        function hipot() {
+            var cat1 = window.document.getElementById('num1');
+            var cat2 = window.document.getElementById('num2');
+            var res = window.document.getElementById('res');
+            var c1 = Number(cat1.value);
+            var c2 = Number(cat2.value);
+            h = hypot.value = Math.hypot(c1, c2).toFixed(2);
+            res.innerHTML = `A hipotenusa é igual a ${h}`;
+        }
+    </script>
+</body>
+</html>
