@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <h1>Strings e Datas</h1>
+    <h4>Separar palavras e contagem de repetição:</h4>
+
+    <form>
+        <input type="text" name="text" value="" placeholder="Frase"/>
+        <input type="button" value="Verificar" onclick="words()"/>
+    </form>
+
+    <script>
+        function words() {
+            let t = document.getElementsByName("text");
+            let bagOfWord = t.item(0).value.split(" ");
+            for (let i = 0; i < bagOfWord.length; i++) {
+                let count = 0;
+                let pos = bagOfWord.indexOf(bagOfWord[i]);
+                while (pos != -1)  {
+                    count++;
+                    pos = bagOfWord.indexOf(bagOfWord[i], pos + 1);
+                }
+                document.body.innerHTML += `</br> Palavra: ${bagOfWord[i]} </br> Ocorrência(s): ${count} </br>`;
+            }
+        }
+    </script>
+</body>
+</html>
