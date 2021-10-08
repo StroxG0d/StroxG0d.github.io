@@ -1,25 +1,60 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questão 1</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Strings e datas</title>
 </head>
 <body>
-    <h1>Strings e Datas</h1>
-    <h4>Vogal em negrito:</h4>
+    <div class="brain">
+    <div class="selectors">
+   
+    <button id="vogais">Vogais em negrito</button>
+    </div>
 
-    <form>
-        <input type="text" name="text" value="" placeholder="Insira a frase"/>
-        <input type="button" value="Inverter" onclick="vogal()"/>
-    </form>
+    <div class="teste-div"> 
+    
+        <label for="old" id="oldLabel"></label>
+        <input id="old">
 
-    <script>
-        function vogal() {
-            let t = document.getElementsByName("text");
-            
+    <textarea id="middle" class="teste"></textarea>
+    <input id="new">
+    <label for="new" id="newLabel"></label>
+</div>
+<p id="output"></p>
+</div>
+<script>
+    const option2 = document.getElementById("vogais")
+    option2.addEventListener('click',() => {
+    camo()
+    camoMiddleRemoval()
+    if(middle.value != ''){
+    let result = []
+    aux = middle.value.split("")
+    let i = 0;
+    aux.forEach( () => {
+        console.log(aux)
+        switch(aux[i]){
+            case 'a': result[i] ="<b>a</b>"; break;
+            case 'e': result[i] ="<b>e</b>"; break;
+            case 'i': result[i] ="<b>i</b>"; break;
+            case 'o': result[i] ="<b>o</b>"; break;
+            case 'u': result[i] ="<b>u</b>"; break;
+            case 'A': result[i] ="<b>A</b>"; break;
+            case 'E': result[i] ="<b>E</b>"; break;
+            case 'I': result[i] ="<b>I</b>"; break;
+            case 'O': result[i] ="<b>O</b>"; break;
+            case 'U': result[i] ="<b>U</b>"; break;
+            default: result[i] = aux[i];
         }
-    </script>
+       i++
+    });
+    console.log(result)
+    output.innerHTML= result.join('')
+    }
+    });
+</script>
 </body>
+<script src="scripts.js"></script>
 </html>
