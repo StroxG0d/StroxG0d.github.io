@@ -16,19 +16,21 @@
     </form>
 
     <script>
-        function words() {
-            let t = document.getElementsByName("text");
-            let bagOfWord = t.item(0).value.split(" ");
-            for (let i = 0; i < bagOfWord.length; i++) {
-                let count = 0;
-                let pos = bagOfWord.indexOf(bagOfWord[i]);
-                while (pos != -1)  {
-                    count++;
-                    pos = bagOfWord.indexOf(bagOfWord[i], pos + 1);
-                }
-                document.body.innerHTML += ` Palavra: ${bagOfWord[i]}  Ocorrência(s): ${count} `;
-            }
+            const option3 = document.getElementById("separar")         
+            option3.addEventListener('click',() => {
+    camo()
+    camoMiddleRemoval()
+    if(middle.value != ''){
+        aux = middle.value.split(' ');
+        let hand = []
+        let txt = []
+        for (i=0;i<aux.length;i++) {
+            hand[i] = countOcurences(middle.value, aux[i])
+            txt[i]= aux[i]+ ': '+ hand[i] + "<br></br>"
+            output.innerHTML=txt.join("")
         }
+    }
+    });
     </script>
 </body>
 </html>
