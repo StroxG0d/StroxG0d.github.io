@@ -1,25 +1,31 @@
 <script>
-var arr = [1,2,3];
+const reduceHelp = (aux, auxNow) => aux + auxNow;
+const reduceProduct = (auxP,auxNowP ) => auxP * auxNowP  ; 
+const sumAux = [1,2,3];
+const sumAux1 = [2,2,2];
+const sumAux2 = [1,2,3,4,5,6];
+console.log("Sum: ", sumAux.reduce(reduceHelp));
+console.log("Sum: ",sumAux1.reduce(reduceHelp));
+console.log("Sum: ",sumAux2.reduce(reduceHelp));
 
-function sum(arr){
-    var sum = 0;
-for(var i = 0; i < arr.length; i++) {
-    sum += arr[i];
-}
-return sum;
+
+function oddSum (oddSumAux){ 
+let oddHelper = [];
+oddHelper = oddSumAux.filter(function(odd){
+    return odd % 2 != 0;
+});
+if(oddHelper.length!=0)return oddHelper.reduce(reduceHelp)
+else return 0;
 }
 
-console.log(sum(arr));
+console.log("sumOdds: ",oddSum(sumAux));
+console.log("sumOdds: ",oddSum(sumAux1));
+console.log("sumOdds: ",oddSum(sumAux2));
 
-function sumOdds(arr){
-    var sumOdds = 0;
-for(var i = 0; i < arr.length; i++ ){ 
-    if((i + 1) % 2 == 1){
-        sumOdds += arr[i];
-        }
-}
-return sumOdds;
-}
-console.log(sumOdds(arr));
+
+
+console.log("Product: ", sumAux.reduce(reduceProduct));
+console.log("Product: ",sumAux1.reduce(reduceProduct));
+console.log("Product: ",sumAux2.reduce(reduceProduct));
 
 </script>
