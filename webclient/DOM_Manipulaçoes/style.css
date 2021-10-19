@@ -1,8 +1,12 @@
 body{
-    background: #252424;
+    background: #242425;
     color: white;
     display: flex;
     flex-direction: column;
+    font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
 }
 .receita{
     display: flex;
@@ -20,7 +24,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-family: 'Permanent Marker', cursive;
+    
 }
 
 img{
