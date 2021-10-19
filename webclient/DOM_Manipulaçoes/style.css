@@ -3,3 +3,36 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+#canvas1{
+    position: absolute;
+    top:0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(35, 57, 117);
+    z-index: -1;
+}
+
+.labs{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Koh Santepheap', cursive;
+
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+h1{
+    color: lime;
+
+}
+a{
+    color:lawngreen;
+}
