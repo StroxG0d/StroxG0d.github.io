@@ -8,7 +8,6 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
         let ages = [];
 
     
-
         response.forEach(data => {
             const showRating = document.createElement("div");
             let castAux = '<h2>Elenco</h2>';
@@ -82,7 +81,7 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
 
         document.querySelector('.movies').innerHTML = aux;
 
-        ages.push(data.classificacao);
+        /*ages.push(data.classificacao);
         });
         const movie = document.querySelectorAll('.movie');
             movie.forEach((element,k) => {
@@ -96,7 +95,7 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
                     element.classList.toggle('yellow');
                     element.style.color='black'
                 }
-                else if (ages[k] = 18) element.classList.toggle('red');
+                else if (ages[k] = 18) element.classList.toggle('red');*/
                 
             });
     }
