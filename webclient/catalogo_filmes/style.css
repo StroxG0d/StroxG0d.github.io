@@ -26,8 +26,6 @@ body{
 }
 .movie{
     position: relative;
-    width: 50vh;
-    height: 50vh;
     background-color: #202024;
     border-radius: 5%;
     overflow: hidden;
@@ -68,10 +66,7 @@ body{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-.rating{
-    width: 50%;
-    display: flex;
-    
+
 }
 .reviews{
     color: white;
