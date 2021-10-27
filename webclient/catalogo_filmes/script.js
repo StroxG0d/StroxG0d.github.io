@@ -7,10 +7,6 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
         let aux = '';
         let ages = [];
 
-        const star = document.createElement("img");
-        star.setAttribute("src","/img/star.svg");
-        const starHalf = document.createElement("img");
-        starHalf.setAttribute("src","/img/starHalf.svg");
 
         response.forEach(data => {
             let castAux = '<h2>Elenco</h2>';
