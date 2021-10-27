@@ -10,7 +10,7 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
         
 
         response.forEach(data => {
-            const showRating = document.createElement("div");
+            
             let castAux = '<h2>Elenco</h2>';
             let generosAux = '<h2>Gênero</h2>';
             let similarAux = '<h2>Similares</h2>';
@@ -55,7 +55,7 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
                 </div>
             <div class="description">
                 <h1>${data.titulo}</h1>
-                ${showRating.outerHTML}
+                
                 <h4>${data.resumo}</h4>
                 
                 <hr> 
