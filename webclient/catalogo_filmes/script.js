@@ -81,21 +81,6 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
 
         document.querySelector('.movies').innerHTML = aux;
 
-        /*ages.push(data.classificacao);
-        });
-        const movie = document.querySelectorAll('.movie');
-            movie.forEach((element,k) => {
-                if(ages[k] == 0){
-                    element.dataset.content = '\u00a0L';
-                    console.log('h1')
-                } else element.dataset.content = ages[k];
-
-                if (ages[k] <= 14) element.classList.toggle('green');
-                else if(ages[k] < 18) {
-                    element.classList.toggle('yellow');
-                    element.style.color='black'
-                }
-                else if (ages[k] = 18) element.classList.toggle('red');*/
                 
             });
     }
