@@ -7,6 +7,8 @@
   }
  
 body {
-background-image: url("../blue-background.jpg");
-
+background-color: black;
+font-family: Helvetica;
+color:white;
+box-sizing: border-box;
 }
