@@ -40,7 +40,6 @@ body{
     width: 100%; height: 100%;
     background-color: black;
     clip-path: circle(8vh at 100% -5%);
-    transition: 0.5s ease-in-out;
 }
 
 
@@ -68,8 +67,8 @@ body{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-    
-}
+
+{
 .reviews{
     color: white;
     position: absolute;
