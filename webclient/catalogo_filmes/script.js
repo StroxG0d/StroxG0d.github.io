@@ -7,6 +7,11 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
         let aux = '';
         let ages = [];
 
+        const star = document.createElement("img");
+        star.setAttribute("src","/img/star.svg");
+        const starHalf = document.createElement("img");
+        starHalf.setAttribute("src","/img/starHalf.svg");
+
         response.forEach(data => {
             const showRating = document.createElement("div");
             let castAux = '<h2>Elenco</h2>';
@@ -28,7 +33,18 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
                     generosAux += li.outerHTML;
                 });
 
-            
+                data.opinioes.forEach((opinion, k) => {
+                    const starDiv = document.createElement("div");
+                    starDiv.className = 'rating'
+                    const span = document.createElement("span");
+                    span.appendChild(document.createTextNode(opinion.descricao));
+                    for(let i=0;i<opinion.rating;i++){
+                        starDiv.appendChild(star.cloneNode(true)); 
+                    }
+                    media = (media + opinion.rating)/(k+1);
+                    span.appendChild(starDiv);
+                    opinioesAux += span.outerHTML;
+                });
 
                 data.titulosSemelhantes.forEach((similar, k) => {
                     response.forEach(test => {
@@ -40,7 +56,14 @@ http.get('https://rafaelescalfoni.github.io/desenv_web/filmes.json', function(st
                     });
                 });
 
-                
+                for(let i=0;i<media;i++){
+                if(media % 1 !== 0 && i+1 >= media){
+                    showRating.appendChild(starHalf.cloneNode(true));
+                    break;
+                }
+                showRating.className = 'showRating';
+                showRating.appendChild(star.cloneNode(true)); 
+                }
             } eachForLoops();
 
             aux += `<div class="card">
