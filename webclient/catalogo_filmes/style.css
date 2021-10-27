@@ -26,6 +26,8 @@ body{
 }
 .movie{
     position: relative;
+    width: 50vh;
+    height: 50vh;
     background-color: #202024;
     border-radius: 5%;
     overflow: hidden;
@@ -66,25 +68,13 @@ body{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-
-}
-.reviews{
-    color: white;
-    position: absolute;
-    bottom: 0em;
+.rating{
+    width: 50%;
     display: flex;
-    padding: .7em;
-    gap: 2em;
-    font-size: 2vh;
-    transition: .5s ease-in-out;
-}
-.reviews span{
-    flex: 1;
+    
 }
 
-.movie:hover .reviews{
-    bottom: -30em;
-}
+
 .movie:hover:after{
     position: absolute;
     top: -10%; left: 100%;
