@@ -16,5 +16,10 @@ box-sizing: border-box;
 .movies{
     display: flex;
     flex-direction: column;
-    color: white
+    background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+
 }
