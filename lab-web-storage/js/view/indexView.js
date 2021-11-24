@@ -8,7 +8,7 @@
  * Define como os itens serão carregados na tela
  * @param {lista de itens} foods 
  */
-function createItems(foods) {
+ function createItems(foods) {
     //recupera o container dos itens
     let menu = document.querySelector("#menu");
     //apagando os itens atuais do DOM
@@ -16,8 +16,8 @@ function createItems(foods) {
     foods.forEach(food => {
         let figFood = document.createElement("figure");
         figFood.id = `food-${food.id}`;
-        figFood.innerHTML =`<img src="${food.image}" alt="${food.name}">
-                <figcaption>${food.name}</figcaption>`;
+        figFood.innerHTML =`<div class="edit"><input type=image src="./imgs/edit.svg"></div> <img src="${food.image}" alt="${food.name}">
+                <figcaption>${food.name}</figcaption>` ;
         menu.appendChild(figFood);
     });
 }
