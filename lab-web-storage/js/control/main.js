@@ -39,7 +39,17 @@ function saveFood(event) {
  */
 document.addEventListener("click", (event) =>{
     //se o elemento criado dinamicamente que foi clicado for um figure
-    if(event.target && 
+    if(event.target.matches("#menu .edit input")){
+        let foodId = parseInt(event.target.parentNode.parentNode.id.substr(5));
+        const newFood = view.save();
+        if(newFood.name == "" || newFood.image == "") {
+            alert("Edição Inválida - Preencha os campos [nome] e [imagem]")
+        }
+        else foods.update(foodId, newFood)
+        view.createItems(foods.listFood(dataset));
+
+    }
+    else if(event.target && 
         (event.target.matches("#menu img")
             || event.target.matches("#menu figcaption")
         )
@@ -53,4 +63,3 @@ document.addEventListener("click", (event) =>{
     }
     
 })
-
