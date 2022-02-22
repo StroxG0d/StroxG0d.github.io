@@ -128,6 +128,7 @@ class IndexView {
       totalObj.innerHTML += `<div class="alert alert-success md-6" role="alert" >
       <h4 class="alert-heading">Obrigado!</h4>
       <p>Seu pedido foi adicionado ao carrinho com sucesso! Se desejar remover esse item basta entrar no carrinho</p>
+  
     </div>`;
     }
   
@@ -138,6 +139,7 @@ class IndexView {
       totalObj.innerHTML += `<div class="alert alert-warning md-6" role="alert" >
       <h4 class="alert-heading">Removido</h4>
       <p>Seu pedido foi removido!</p>
+  
     </div>`;
     }
   
@@ -228,3 +230,4 @@ class IndexView {
     }
   }
   export default IndexView;
+  
